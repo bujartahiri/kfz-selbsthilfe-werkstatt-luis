@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Calendar, Phone, ArrowDown, MapPin, Clock, ShieldCheck, Wrench } from "lucide-react";
+import { Calendar, ArrowDown, MapPin, Clock, Wrench, Navigation } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -54,14 +54,14 @@ export function Hero() {
               </Button>
 
               <Button
-                href={`tel:${BUSINESS.phone.clean}`}
+                href="#leistungen"
                 variant="secondary"
                 size="lg"
-                icon={<Phone className="w-4 h-4 text-[#d4f82a]" />}
-                iconPosition="left"
+                icon={<ArrowDown className="w-4 h-4 text-[#d4f82a]" />}
+                iconPosition="right"
                 className="w-full sm:w-auto text-center"
               >
-                {BUSINESS.phone.display}
+                LEISTUNGEN & PREISE
               </Button>
             </div>
 
@@ -104,7 +104,7 @@ export function Hero() {
             <div className="relative border border-[#242935] bg-[#14161c] p-2 rounded-sm shadow-2xl technical-corner group">
               {/* Technical framing header */}
               <div className="flex items-center justify-between px-2.5 py-1.5 border-b border-[#242935] text-[10px] font-mono text-[#5b6271] mb-2">
-                <span>WERKSTATT-DOKUMENTATION // TELTOW</span>
+                <span>WERKSTATTGELÄNDE // ZUFAHRT</span>
                 <span className="text-[#d4f82a]">AUTHENTISCHES FOTO</span>
               </div>
 
@@ -112,7 +112,7 @@ export function Hero() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2px] bg-[#0d0f12]">
                 <Image
                   src="/images/workshop/lift-bay.jpg"
-                  alt="Originalaufnahme der KFZ Selbsthilfe Werkstatt Luis mit Hebebühne und Arbeitsplatz"
+                  alt="Einfahrt und Firmenschild der KFZ Selbsthilfe Werkstatt Luis an der Ruhlsdorfer Straße 105 in Teltow"
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
@@ -123,10 +123,10 @@ export function Hero() {
                 {/* Overlaid Badges */}
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono">
                   <span className="bg-[#0d0f12]/90 backdrop-blur-sm border border-[#242935] px-2.5 py-1 text-[#f4f3ef] rounded-[2px]">
-                    2-SÄULEN-HEBEBÜHNE
+                    HAUPTZUFAHRT · RUHLSDORFER STR. 105
                   </span>
                   <span className="bg-[#d4f82a] text-[#0d0f12] px-2 py-1 font-bold rounded-[2px]">
-                    PKW & TRANSPORTER
+                    STANDORT TELTOW
                   </span>
                 </div>
               </div>
@@ -134,18 +134,18 @@ export function Hero() {
               {/* Secondary Detail Strip */}
               <div className="mt-2 grid grid-cols-2 gap-2 text-xs font-mono">
                 <div className="bg-[#1b1e25] border border-[#262a34] p-2.5 rounded-[2px] flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-[#d4f82a] shrink-0" />
+                  <MapPin className="w-4 h-4 text-[#d4f82a] shrink-0" />
                   <div>
-                    <div className="text-[#f4f3ef] font-semibold text-[11px]">TÜV-GEPRÜFT</div>
-                    <div className="text-[10px] text-[#8e95a3]">Sichere Hubtechnik</div>
+                    <div className="text-[#f4f3ef] font-semibold text-[11px]">DIREKT AN DER STRASSE</div>
+                    <div className="text-[10px] text-[#8e95a3]">Sofort gut erkennbar</div>
                   </div>
                 </div>
 
                 <div className="bg-[#1b1e25] border border-[#262a34] p-2.5 rounded-[2px] flex items-center gap-2">
-                  <Wrench className="w-4 h-4 text-[#d4f82a] shrink-0" />
+                  <Navigation className="w-4 h-4 text-[#d4f82a] shrink-0" />
                   <div>
-                    <div className="text-[#f4f3ef] font-semibold text-[11px]">WERKZEUG DABEI</div>
-                    <div className="text-[10px] text-[#8e95a3]">Kompletter Wagen</div>
+                    <div className="text-[#f4f3ef] font-semibold text-[11px]">GROSSER WERKSTATTHOF</div>
+                    <div className="text-[10px] text-[#8e95a3]">Bequemes Rangieren</div>
                   </div>
                 </div>
               </div>

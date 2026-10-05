@@ -32,14 +32,13 @@ export function Navbar() {
             <span className="text-[#5b6271]">|</span>
             <span>TÜV-GEPRÜFTE HEBEBÜHNEN & WERKZEUG</span>
           </div>
-          <div className="flex items-center gap-4">
-            <a
-              href={`tel:${BUSINESS.phone.clean}`}
-              className="flex items-center gap-1 text-[#f4f3ef] hover:text-[#d4f82a] transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#d4f82a]" />
-              <span>{BUSINESS.phone.display}</span>
-            </a>
+          <div className="flex items-center gap-4 text-[#8e95a3]">
+            <span className="flex items-center gap-1.5 text-[#f4f3ef]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#d4f82a]" aria-hidden="true" />
+              <span>BARZAHLUNG VOR ORT</span>
+            </span>
+            <span className="text-[#5b6271]">|</span>
+            <span className="text-[#d4f82a] font-medium">ONLINE-TERMINE VERFÜGBAR</span>
           </div>
         </div>
       </div>

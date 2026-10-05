@@ -149,18 +149,11 @@ export const WORKSHOP_STEPS = [
 
 export const WORKSHOP_GALLERY = [
   {
-    src: "/images/workshop/workshop-overview.jpg",
-    alt: "KFZ Selbsthilfe Werkstatt Luis Halle mit 2-Säulen-Hebebühne",
-    title: "Haupt-Werkstatthalle",
-    category: "Arbeitsplatz",
-    technical: "2-Säulen-Hebebühne · Breite Durchfahrtsbreite · Hallenbeleuchtung",
-  },
-  {
     src: "/images/workshop/lift-bay.jpg",
-    alt: "Eingestelltes Fahrzeug auf Hebebühne in der Werkstatt",
-    title: "Hebebühnen-Arbeitsplatz",
-    category: "Hebebühne",
-    technical: "Tragkraft bis 4.0t · Auch für Transporter & Vans geeignet",
+    alt: "Einfahrtsschild der KFZ Selbsthilfe Werkstatt Luis an der Ruhlsdorfer Straße 105",
+    title: "Werkstatt-Einfahrt",
+    category: "Standort",
+    technical: "Ruhlsdorfer Str. 105 · Gut sichtbar von der Straße · Großer Hof",
   },
   {
     src: "/images/workshop/tool-cart.jpg",
@@ -170,25 +163,32 @@ export const WORKSHOP_GALLERY = [
     technical: "Inklusive bei jeder Bühnenmiete · Steckschlüssel, Ratschen, Zangen",
   },
   {
-    src: "/images/workshop/underbody-work.jpg",
-    alt: "Unterbodenreparatur am Fahrzeug auf der Hebebühne",
-    title: "Reparatur in Stehhöhe",
-    category: "Unterboden",
-    technical: "Volle Bewegungsfreiheit · Auspuff, Bremsen, Fahrwerk, Achsen",
+    src: "/images/workshop/lift-front.jpg",
+    alt: "Blick in die Werkstatthalle mit 2-Säulen-Hebebühnen und Stellplätzen",
+    title: "Werkstatthalle & Bühnen",
+    category: "Hebebühnen",
+    technical: "Moderne 2-Säulen-Hubtechnik · Hohe Hallendecke · Helle Beleuchtung",
   },
   {
-    src: "/images/workshop/wheel-alignment.jpg",
-    alt: "Optischer Messstand für 3D-Achsvermessung",
-    title: "3D-Achsvermessung",
-    category: "Messtechnik",
-    technical: "Optische Radsensoren · Digitale Geometriekorrektur",
+    src: "/images/workshop/underbody-work.jpg",
+    alt: "Werkstattschild am Eingang der Halle",
+    title: "Werkstatteingang",
+    category: "Haupteingang",
+    technical: "Luis Werkstattschild · Schnelle Anmeldung vor Ort",
   },
   {
     src: "/images/workshop/tire-service.jpg",
-    alt: "Reifenmontagemaschine und Auswuchtstation",
-    title: "Reifenmontage & Wuchten",
-    category: "Reifenservice",
-    technical: "Montage bis über 17 Zoll · Automatisches Radauswuchten",
+    alt: "Werbebanner der KFZ Selbsthilfe Werkstatt Luis am Werkstattzaun",
+    title: "Geländebeschilderung",
+    category: "Außengelände",
+    technical: "Orientierung auf dem Betriebsgelände · Feste Stellflächen",
+  },
+  {
+    src: "/images/workshop/workshop-overview.jpg",
+    alt: "Offizielle Visitenkarte der KFZ Selbsthilfe Werkstatt Luis",
+    title: "Offizielle Kontaktdaten",
+    category: "Kontakt",
+    technical: "selbsthilfewerkstatt.luis@gmail.com · Tel. +49 176 146 56 161",
   },
 ];
 
@@ -265,7 +265,5 @@ export const NAV_LINKS = [
   { label: "Leistungen & Preise", href: "#leistungen" },
   { label: "Ablauf", href: "#ablauf" },
   { label: "Werkstatt", href: "#werkstatt" },
-  { label: "Regeln", href: "#regeln" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Anfahrt", href: "#kontakt" },
+  { label: "FAQ & Anfahrt", href: "#kontakt" },
 ];
